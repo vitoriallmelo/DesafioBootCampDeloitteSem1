@@ -3,37 +3,31 @@ public class Motorista {
     private String cnh;
     private Veiculo veiculoAtual; //pode ser None
     //construtor
-    private Motorista(String nome, String cnh, Veiculo veiculoAtual ) {
+    private Motorista(String nome, String cnh, Veiculo veiculoAtual) {
         this.nome = nome;
         this.cnh = cnh;
         this.veiculoAtual = veiculoAtual;
     }
-    //metodos
-
+    //metodos get e set
     public String getNome() {
         return nome;
     }
-
     public void setNome(String nome) {
         this.nome = nome;
     }
-
     public String getCnh() {
         return cnh;
     }
-
     public void setCnh(String cnh) {
         this.cnh = cnh;
     }
-
     public Veiculo getVeiculoAtual() {
         return veiculoAtual;
     }
-
     public void setVeiculoAtual(Veiculo veiculoAtual) {
         this.veiculoAtual = veiculoAtual;
     }
-
+    //outros metodos
     private void atribuirVeiculo(Veiculo nome){
         this.veiculoAtual = nome;
     }

@@ -1,10 +1,9 @@
 //velocidade em km/h e peso em T
-
 public class Veiculo {
     protected String marca;
     protected String modelo;
     protected int ano;
-    protected float velocidade; //verificar como deixar a partir de 0.0
+    protected float velocidade;
     //construtor
     protected Veiculo(String marca, String modelo, int ano, float velocidade) {
         this.marca = marca;
@@ -12,8 +11,7 @@ public class Veiculo {
         this.ano = ano;
         this.velocidade = velocidade;
     }
-    //metodos
-
+    //metodos get e set
     public String getMarca() {
         return marca;
     }
@@ -29,23 +27,21 @@ public class Veiculo {
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
-
     public int getAno() {
         return ano;
     }
-
     public void setAno(int ano) {
         this.ano = ano;
     }
-
     public float getVelocidade() {
         return velocidade;
     }
-
     public void setVelocidade(float velocidade) {
-        this.velocidade = velocidade;
+        if (velocidade >= 0) { //aceitar a partir de 0.0
+            this.velocidade = velocidade;
+        }
     }
-
+    //outros metodos
     public float acelerar(float velocidade) {
         velocidade += 10;
         return velocidade;

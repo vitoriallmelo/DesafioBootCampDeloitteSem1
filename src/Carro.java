@@ -6,15 +6,12 @@ public class Carro extends Veiculo {
         this.numPortas = numPortas;
     }
     //metodos
-
     public int getNumPortas() {
         return numPortas;
     }
-
     public void setNumPortas(int numPortas) {
         this.numPortas = numPortas;
     }
-
     @Override
     public void exibirInfo() {
         super.exibirInfo();

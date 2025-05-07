@@ -6,23 +6,20 @@ public class Frota {
         this.veiculos = veiculos;
         this.motoristas = motoristas;
     }
-    //metodos
+    //metodos get e set
     public Motorista[] getMotoristas() {
         return motoristas;
     }
-
     public void setMotoristas(Motorista[] motoristas) {
         this.motoristas = motoristas;
     }
-
     public Veiculo[] getVeiculos() {
         return veiculos;
     }
-
     public void setVeiculos(Veiculo[] veiculos) {
         this.veiculos = veiculos;
     }
-
+    //outros metodos
     public void adicionarVeiculo(Veiculo veiculo, int i) {
         veiculos[i] = veiculo;
     }
